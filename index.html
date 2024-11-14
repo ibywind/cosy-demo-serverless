@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语音克隆表单</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>语音克隆系统</h1>
+        <form id="cloneForm">
+            <div class="form-group">
+                <label for="whisperId">Whisper ID:</label>
+                <input type="text" id="whisperId" name="whisperId" required>
+            </div>
+
+            <div class="form-group">
+                <label for="whisperKey">Whisper Key:</label>
+                <input type="text" id="whisperKey" name="whisperKey" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cosyvoiceId">Cosyvoice ID:</label>
+                <input type="text" id="cosyvoiceId" name="cosyvoiceId" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cosyvoiceKey">Cosyvoice Key:</label>
+                <input type="text" id="cosyvoiceKey" name="cosyvoiceKey" required>
+            </div>
+
+            <div class="form-group">
+                <label for="audioFile">示例音频:</label>
+                <input type="file" id="audioFile" name="audioFile" accept="audio/*" required>
+                <button type="button" id="transcribeButton">转写文字</button>
+            </div>
+
+            <div class="form-group">
+                <label for="audioText">示例音频文案:</label>
+                <textarea id="audioText" name="audioText"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="cloneText">被克隆文案:</label>
+                <textarea id="cloneText" name="cloneText" required></textarea>
+            </div>
+
+            <button type="submit" id="cloneButton">执行</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
